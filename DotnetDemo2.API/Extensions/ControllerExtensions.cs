@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.OData;
 using Microsoft.AspNetCore.OData.NewtonsoftJson;
-using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json.Serialization;
 
-namespace DotnetDemo2.API.Shared.Extensions
+namespace DotnetDemo2.API.Extensions
 {
     public static class ControllerExtensions
     {

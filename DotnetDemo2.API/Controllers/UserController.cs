@@ -23,11 +23,6 @@ namespace DotnetDemo2.API.Controllers
             return BadRequest("Ação não permitida.");
         }
 
-        public override Task<IActionResult> Delete(int id)
-        {
-            return Task.FromResult<IActionResult>(BadRequest("Ação não permitida."));
-        }
-
         [HttpGet("[action]")]
         public IActionResult Me()
         {

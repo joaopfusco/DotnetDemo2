@@ -1,4 +1,3 @@
-using DotnetDemo2.API.Shared.Controllers;
 using DotnetDemo2.Domain.Models;
 using DotnetDemo2.Service.Interfaces;
 using Microsoft.AspNetCore.JsonPatch;

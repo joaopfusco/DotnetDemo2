@@ -1,14 +1,13 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
-namespace DotnetDemo2.API.Shared.Controllers
+namespace DotnetDemo2.API.Controllers
 {
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [ApiController]
     [Route("api/[controller]")]
-    public class BaseController(ILogger logger) : Controller
+    public class BaseController(ILogger logger) : ControllerBase
     {
         private readonly ILogger _logger = logger;
 

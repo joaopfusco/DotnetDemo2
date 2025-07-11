@@ -3,9 +3,8 @@ using DotnetDemo2.Service.Interfaces;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OData.Query;
-using Microsoft.Extensions.Logging;
 
-namespace DotnetDemo2.API.Shared.Controllers
+namespace DotnetDemo2.API.Controllers
 {
     public class CrudController<TModel>(IBaseService<TModel> service, ILogger logger) : BaseController(logger) where TModel : BaseModel
     {

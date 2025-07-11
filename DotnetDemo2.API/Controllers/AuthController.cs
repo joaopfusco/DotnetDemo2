@@ -1,4 +1,3 @@
-using DotnetDemo2.API.Shared.Controllers;
 using DotnetDemo2.Service.DTOs;
 using DotnetDemo2.Service.Interfaces;
 using Microsoft.AspNetCore.Authentication;
@@ -8,7 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
-namespace DotnetDemo2.Security.Controllers
+namespace DotnetDemo2.API.Controllers
 {
     [AllowAnonymous]
     public class AuthController(IUserService service, ILogger<AuthController> logger) : BaseController(logger)

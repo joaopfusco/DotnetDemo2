@@ -40,20 +40,6 @@ namespace DotnetDemo2.API.Shared.Extensions
                 {
                     ValidateIssuer = true
                 };
-            })
-            .AddJwtBearer(options =>
-            {
-                var keyString = configuration["JwtKey"] ?? throw new Exception("JwtKey não encontrado.");
-                var key = Encoding.UTF8.GetBytes(keyString);
-
-                options.SaveToken = true;
-                options.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuer = false,
-                    ValidateAudience = false,
-                    ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(key),
-                };
             });
 
             services.AddAuthorization();

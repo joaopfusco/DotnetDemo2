@@ -40,6 +40,7 @@ namespace DotnetDemo2.API
             app.UseAuthorization();
             app.UseAuthorization();
 
+            app.MapGet("/", () => Results.Redirect("/api/System/Version")).ExcludeFromDescription();
             app.MapControllers();
 
             app.Run();

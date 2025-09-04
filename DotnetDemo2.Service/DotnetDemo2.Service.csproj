@@ -15,4 +15,8 @@
 	<ProjectReference Include="..\DotnetDemo2.Repository\DotnetDemo2.Repository.csproj" />
   </ItemGroup>
 	
+  <ItemGroup>
+    <Folder Include="DTOs\" />
+  </ItemGroup>
+	
 </Project>

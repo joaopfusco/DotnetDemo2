@@ -29,11 +29,11 @@ namespace DotnetDemo2.Repository.Data
             throw new Exception("Não há ConnectionString.");
         }
 
-        public DbSet<User> Users { get; set; }
+        //public DbSet<Model> NomeTabel { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new UserMapping());
+            //modelBuilder.ApplyConfiguration(new ModelMapping());
 
             base.OnModelCreating(modelBuilder);
         }

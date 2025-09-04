@@ -7,7 +7,7 @@ namespace DotnetDemo2.API.Extensions
     {
         internal static IServiceCollection AddAppServices(this IServiceCollection services)
         {
-            services.AddTransient<IUserService, UserService>();
+            //services.AddTransient<IModelService, ModelService>();
 
             return services;
         }
